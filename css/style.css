@@ -103,7 +103,7 @@ header{
 
 .sec1{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%),url(/images/taj-mahal.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%),url(./images/taj-mahal.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,7 +205,7 @@ header{
 .sec3{
     height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%),url(/images/travel-bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%),url(./images/travel-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -452,4 +452,8 @@ footer{
 
 .active{
     background-color: rgb(128, 128, 128);
+}
+
+.quote{
+    text-align: center;
 }
