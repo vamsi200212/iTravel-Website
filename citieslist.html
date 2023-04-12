@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <a href="#" class="logo">iTravel.</a>
+            <form action="./action_page.php" class="search-form">
+                <input type="text" placeholder="Where you wanna go..." name="search" class="search">
+                <button type="submit">
+                    <img src="./images/search.png" class="search-button" alt="search">
+                </button>
+            </form>
+            <ul class="list" id="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Cities</a></li>
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li><a href="contactus.html">ContactUs</a></li>
+            </ul>
+            <img src="./images/ham.png" alt="menu" class="ham" onclick="onClickMenu()">
+        </nav>
+    </header>
+    <main>
+        <div class="cities-container">
+            <h1 class="heading">Top cities in India</h1>
+            <a href="cityinfo.html">
+                <div class="city" id="hyd" onclick="cityName(this.id)">
+                    <h1>Hyderabad</h1>
+                </div>
+            </a>
+            <a href="cityinfo.html">
+                <div class="city" id="bang" onclick="cityName(this.id)">
+                    <h1>Bangalore</h1>
+                </div>
+            </a>
+            <a href="cityinfo.html">
+                <div class="city" id="mum" onclick="cityName(this.id)">
+                    <h1>Mumbai</h1>
+                </div>
+            </a>
+            <a href="cityinfo.html">
+                <div class="city" id="del" onclick="cityName(this.id)">
+                    <h1>Delhi</h1>
+                </div>
+            </a>
+            <a href="cityinfo.html">
+                <div class="city" id="chen" onclick="cityName(this.id)">
+                    <h1>Chennai</h1>
+                </div>
+            </a>
+            <a href="cityinfo.html">
+                <div class="city" id="pune" onclick="cityName(this.id)">
+                    <h1>Pune</h1>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container1">
+            <a href="#" class="logo-footer">iTravel.</a>
+            <div class="social">
+                <a href="#"><img src="./images/insta.png" alt="insta" height="30px" width="30px"></a>
+                <a href="#"><img src="./images/twit.png" alt="twitter" height="30px" width="30px"></a>
+                <a href="#"><img src="./images/fb.png" alt="insta" height="30px" width="30px"></a>
+            </div>
+        </div>
+        <div class="footer-container2">
+            <div class="serve-container">
+                <ul>
+                    <h5>SERVICES</h5>
+                    <li><a href="#">Trips</a></li>
+                    <li><a href="#">Packers & Movers</a></li>
+                    <li><a href="#">Long Trips</a></li>
+                </ul>
+            </div>
+            <div class="serve-container">
+                <ul>
+                    <h5>ABOUTUS</h5>
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="serve-container">
+                <ul>
+                    <h5>LEGAL</h5>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/citylistscript.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

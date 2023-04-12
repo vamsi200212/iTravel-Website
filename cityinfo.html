@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Information</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/page2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <a href="#" class="logo">iTravel.</a>
+            <form action="./action_page.php" class="search-form">
+                <input type="text" placeholder="Where you wanna go..." name="search" class="search">
+                <button type="submit">
+                    <img src="./images/search.png" class="search-button" alt="search">
+                </button>
+            </form>
+            <ul class="list" id="list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#" class="active">Cities</a></li>
+                <li><a href="aboutus.html">AboutUs</a></li>
+                <li><a href="#">ContactUs</a></li>
+            </ul>
+            <img src="./images/ham.png" alt="menu" class="ham" onclick="onClickMenu()">
+        </nav>
+        <script src="./js/script.js"></script>
+    </header>
+    <main>
+        <section class="sec1" id="sec1">
+            <h1 id="city-n" class="font-chn">Hyderabad</h1>
+            <h3 id="city-tag">- city of nawabs -</h3>
+        </section>
+        <section class="city-info">
+            <p id="city-info-1">
+                Hyderabad is the largest city and capital of the state of Telangana. At over 12.2 million, it has the
+                largest population of any city in the state. Hyderabad is an A-1 city under the terms of development
+                priorities. It is also known as city of pearls or city of Nizams. The people of Hyderabad are called
+                Hyderabadis.
+            </p>
+            <p id="city-info-2">
+                Hyderabad was founded in 1591 AD by Sultan Muhammad Quli Qutb Shah on the banks of river Musi. It was
+                later ruled by the Mughal governor Nizam Asaf Jah I who then founded the Asaf Jahi Dynasty (Also known
+                as The Nizams). There were a total of 10 Nizams with the last one being Osman Ali Khan, Asaf Jah VII.
+            </p>
+            <p id="city-info-3">
+                The city is home to the Ramoji Film City which spans an area of over 2,000 acres (8.1 km2; 3.1 sq mi).
+                The movieindustry here is called The Hyderabad Deccan Urdu film industry (also known as Deccanwood).
+            </p>
+        </section>
+        <section class="con">
+            <div class="places-container" id="places-container">
+                <div class="visit-title" id="visit">Places to visit in Hyderabad</div>
+                <div class="myPlaces fade">
+                    <img src="./images/pl-hyd-1.jpg" width="100%" class="pl-img" height="95%" style="object-fit: cover;">
+                    <h3 class="place-name">Charminar</h3>
+                </div>
+                <div class="myPlaces fade">
+                    <img src="./images/pl-hyd-2.jpg" class="pl-img" width="100%" height="95%" style="object-fit: cover;">
+                    <h3 class="place-name">Birla Mandir</h3>
+                </div>
+                <div class="myPlaces fade">
+                    <img src="./images/pl-hyd-3.jpg" width="100%" class="pl-img" height="95%" style="object-fit: cover;">
+                    <h3 class="place-name">Ramoji Film City</h3>
+                </div>
+                <div class="myPlaces fade">
+                    <img src="./images/pl-hyd-4.jpg" width="100%" class="pl-img" height="95%" style="object-fit: cover;">
+                    <h3 class="place-name">Golconda Fort</h3>
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(+1)">&#10095</a>
+            </div>
+        </section>
+        <br>
+        <div id="dot-container" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container1">
+            <a href="#" class="logo-footer">iTravel.</a>
+            <div class="social">
+                <a href="#"><img src="./images/insta.png" alt="insta" height="30px" width="30px"></a>
+                <a href="#"><img src="./images/twit.png" alt="twitter" height="30px" width="30px"></a>
+                <a href="#"><img src="./images/fb.png" alt="insta" height="30px" width="30px"></a>
+            </div>
+        </div>
+        <div class="footer-container2">
+            <div class="serve-container">
+                <ul>
+                    <h5>SERVICES</h5>
+                    <li><a href="#">Trips</a></li>
+                    <li><a href="#">Packers & Movers</a></li>
+                    <li><a href="#">Long Trips</a></li>
+                </ul>
+            </div>
+            <div class="serve-container">
+                <ul>
+                    <h5>ABOUTUS</h5>
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="serve-container">
+                <ul>
+                    <h5>LEGAL</h5>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/cityscript.js"></script>
+</body>
+
+</html>
